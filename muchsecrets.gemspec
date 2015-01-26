@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Pat O'Brien"]
   s.email       = ["muchsecrets@tetrisbocks.net"]
   s.description = "uses rsautl and openssl to decrypt base64 encoded strings"
-  s.summar      = "much secrets, such security"
+  s.summary     = "much secrets, such security"
   s.homepage    = "http://github.com/poblahblahblah/muchsecrets"
   s.files       = Dir["{lib}/**/*.rb", "bin/*", "LICENSE", "*.md"]
   s.license     = 'MIT'
