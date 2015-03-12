@@ -39,6 +39,18 @@ super_secret = wow.get_http_secret('http://consul/v1/kv/notprod/github_api_key/e
 # => "such_privacy"
 ```
 
+## Limitations ##
+
+There is a string size limitation which varies in length depending on the length of key you choose. Below lists the key size and what the maximum string size for that key will be.
+
+| Key Size | Max String Size |
+|----------|-----------------|
+| 1024 bit | 116  bytes      |
+| 2048 bit | 244  bytes      |
+| 4096 bit | 500  bytes      |
+| 8096 bit | 1012 bytes      |
+
+
 ## To Do ##
 
 * come up with less awful method names
