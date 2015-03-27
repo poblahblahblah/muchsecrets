@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "muchsecrets"
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2015-03-13'
   s.authors     = ["Pat O'Brien"]
   s.email       = ["muchsecrets@tetrisbocks.net"]
@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.summary     = "much secrets, such security"
   s.homepage    = "http://github.com/poblahblahblah/muchsecrets"
   s.files       = Dir["{lib}/**/*.rb", "bin/*", "LICENSE", "*.md"]
+  s.executables << 'muchsecrets'
   s.license     = 'MIT'
 end
 

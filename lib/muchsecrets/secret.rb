@@ -15,6 +15,11 @@ module MuchSecrets
       return decrypt_string(encrypted_secret)
     end
 
+    def get_consul_secret(uri)
+      uri = uri + '?raw'
+      return get_http_secret(uri)
+    end
+
     def encrypt_string(val)
       cert = OpenSSL::X509::Certificate.new(File.read(@public_key))
       return OpenSSL::PKCS7::encrypt([cert], val, @cipher, OpenSSL::PKCS7::BINARY)
