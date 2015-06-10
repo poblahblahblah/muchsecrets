@@ -4,7 +4,21 @@ GEM
     addressable (2.3.6)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
+    diff-lcs (1.2.5)
     rake (10.4.2)
+    rspec (3.2.0)
+      rspec-core (~> 3.2.0)
+      rspec-expectations (~> 3.2.0)
+      rspec-mocks (~> 3.2.0)
+    rspec-core (3.2.3)
+      rspec-support (~> 3.2.0)
+    rspec-expectations (3.2.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.2.0)
+    rspec-mocks (3.2.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.2.0)
+    rspec-support (3.2.2)
     safe_yaml (1.0.4)
     webmock (1.20.4)
       addressable (>= 2.3.6)
@@ -15,4 +29,5 @@ PLATFORMS
 
 DEPENDENCIES
   rake
+  rspec
   webmock
