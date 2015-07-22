@@ -1,4 +1,5 @@
 [![license](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://raw.githubusercontent.com/poblahblahblah/muchsecrets/master/LICENSE)
+[![Build Status](https://travis-ci.org/poblahblahblah/muchsecrets.svg)](https://travis-ci.org/poblahblahblah/muchsecrets)
 
 **MuchSecrets** is a poorly named gem that handles encrypting and decrypting secrets to/from consul.
 
@@ -98,7 +99,6 @@ super_secret = wow.get_http_secret('notprod/github_api_key/encrypted') # would f
 ## To Do ##
 
 * come up with less awful method names
-* write tests
 * be able to encrypt and POST to consul
 * more security
 
