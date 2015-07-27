@@ -7,7 +7,7 @@ module MuchSecrets
     def initialize(options = {})
       @private_key = options[:private_key]
       @public_key  = options[:public_key]
-      @base_url    = options[:base_url] || "http://consul:8500/v1/kv" 
+      @base_url    = options[:base_url] || "http://localhost:8500/v1/kv" 
     end
 
     def get_http_secret(uri)

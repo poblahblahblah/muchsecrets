@@ -23,7 +23,7 @@ describe MuchSecrets::Secret do
     end
 
     it "fetches the http secret from the default base url" do
-      expect(Net::HTTP).to receive(:get).with(URI("http://consul:8500/v1/kv/path/to/secret"))
+      expect(Net::HTTP).to receive(:get).with(URI("http://localhost:8500/v1/kv/path/to/secret"))
 
       subject
     end
